@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: rgb(232, 232, 253);
+}
+
+.container {
+    background-color: aliceblue;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    width: min(90%, 31.25rem);
+    padding: 3.5rem 0;
+    border-radius: 0.8rem;
+    box-shadow: 0 1.97rem 3.75rem rgba(136, 156, 255, 0.5);
+}
+
+.timer-display {
+    position: relative;
+    width: 116%;
+    background-color: rgb(97, 38, 207);
+    left: -8%;
+    padding: 2.5rem 0;
+    font-family: "Roboto Mono", monospace;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 0.8rem;
+    color: aliceblue;
+    box-shadow: 0 0.5rem 1rem rgba(1, 87, 185, 0.2);
+}
+
+.buttons{
+    width: 100%;
+    margin: 3.2rem auto 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 53px;
+}
+
+.buttons button{
+    font-size: 1.2rem;
+    background-color: rgb(223, 236, 255);
+    color: rgb(97, 38, 207);
+    border: none;
+    font-family: "Poppins", sans-serif;
+    border-radius: 0.8rem;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+}
+
+.buttons button:hover{
+    background-color: rgb(221, 221, 255);
+}
+
+#start-timer {
+    background-color: rgb(97, 38, 207);
+    color: aliceblue;
+}
+
+#start-timer:hover {
+    background-color: rgb(76, 28, 164);
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: min(90%, 23rem);
+        padding: 3rem 0;
+    }
+
+    .timer-display {
+        font-size: 2.3rem;
+    }
+
+    .buttons {
+        margin: 2.5rem auto 0 auto;
+        gap: 30px;
+    }
+
+    .buttons button {
+        font-size: 1rem;
+        padding: 10px 18px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: min(90%, 17rem);
+        padding: 2.5rem 0;
+    }
+
+    .timer-display {
+        font-size: 1.7rem;
+    }
+
+    .buttons {
+        margin: 2rem auto 0 auto;
+        gap: 22px;
+    }
+
+    .buttons button {
+        font-size: 0.8rem;
+        padding: 8px 13px;
+    }
+}
